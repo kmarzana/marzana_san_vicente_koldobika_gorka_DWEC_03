@@ -38,10 +38,12 @@ if (document.body.id === loginBody) {
     loginSubmitHandler(); 
     passwordValidation();
     togglePasswordVisibility();
+    removeItemFromLocalStorage('refreshDetected');
 }
 
 if (document.body.id === welcomeBody) {
     loggedUser.textContent = getDataFromLocalStorage('pixelArt_logged_user');
+    removeItemFromLocalStorage('refreshDetected');
     startCountdown(sessionExpireCountDown, 30).then(() => {
         navigateTo('../index.html', true);
     });
