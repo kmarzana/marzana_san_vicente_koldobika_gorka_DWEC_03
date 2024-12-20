@@ -42,7 +42,7 @@ if (document.body.id === loginBody) {
 
 if (document.body.id === welcomeBody) {
     loggedUser.textContent = getDataFromLocalStorage('pixelArt_logged_user');
-    startCountdown(sessionExpireCountDown, 5).then(() => {
+    startCountdown(sessionExpireCountDown, 30).then(() => {
         navigateTo('../index.html', true);
     });
 }
