@@ -1,0 +1,53 @@
+/* welcome.html */
+.game-description-container img {
+    float: left;
+    margin: 0 1rem 0 0;
+    width: 8rem;
+    height: auto;
+    border: 2px solid rgba(51, 51, 51, .5);
+}
+
+.game-description-text {
+    text-align: justify;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.game-description-text span {
+    font-weight: bold;
+}
+
+.level-buttons-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.level-btn {
+    min-width: 8rem;
+    padding: .5rem;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-color: #5FC23A;
+    border-radius: 20px;
+    outline: none;
+}
+
+@media (max-width: 1150px) {
+    .game-description-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1150px) {
+    .level-buttons-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}

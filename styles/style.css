@@ -1,0 +1,101 @@
+@import url('./reset.css');
+
+html, body {
+    color: rgb(51, 51, 51, 1);
+    background-color: rgb(250, 250, 250);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 50vw;
+    min-width: 400px;
+    margin: 0 auto;
+}
+
+/* Estilos COMUNES para el <header> */
+header {
+    flex: 0 0 10%; /* Flex para que ocupe un 10% de la altura total */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem .5rem;
+    border-bottom: 3px dashed rgba(51, 51, 51, 0.1);
+}
+
+.game-logo-container, .logout-container {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.game-title {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: .5rem;
+}
+
+.logout-icon-container {
+    border-radius: 10px;
+    padding: .1rem;
+    display: flex; 
+}
+
+.game-logo {
+    height: 2rem;
+    width: auto;
+}
+
+.countdown {
+    width: 3rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.logout-icon {
+    height: 1.5rem;
+    width: auto;
+}
+
+.session-user {
+    font-weight: bold;
+    letter-spacing: .2rem;
+}
+
+/* Estilos COMUNES para el <main> */
+main {
+    flex: 1 0 80%; /* Flex para ocupar el 80% restante de la altura */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+/* Estilos COMUNES para el <footer> */
+footer {
+    flex: 0 0 10%; /* Flex para que ocupe el 10% de la altura */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding: .5rem;
+    border-top: 3px dashed rgba(51, 51, 51, 0.1);
+}
+
+footer p {
+    font-size: .75rem;
+}
+
+/* Media queries para el <header> */
+@media (max-width: 1150px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin: 0;
+    }
+}
+/* FIN DE LOS ESTILOS COMUNES */

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4: Interfaz de Resultados</title>
+
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/resultados.css">
+</head>
+
+<body>
+    <!-- <header> comun. Añadimos o quitamos elementos mediante JavaScript dependiendo de la página html en la que nos situemos -->
+    <header class="main-header">
+        <div class="game-logo-container">
+            <h1 class="game-title">PIXELART</h1>
+            <img class="game-logo"
+                src="../images/kisspng-space-invaders-extreme-2-clip-art-arcade-game-alie-space-invaders-svg-png-icon-free-download-3969-5b7e14a34da5a7.3685625015349894753181.png"
+                alt="Logo del juego PIXELART representando un marciano del juego clásico Space Invaders">
+        </div>
+        <div class="logout-container">
+            <div class="countdown"></div>
+            <div class="logout-icon-container">
+                <div class="logout-icon-container">
+                    <img class="logout-icon" src="../images/logout_24dp_333333_FILL0_wght400_GRAD0_opsz24.png"
+                        alt="Icono de cierre de sesión">
+                </div>
+            </div>
+            <span class="session-user"></span>
+        </div>
+    </header>
+
+    <main>
+        <div class="results-container">
+            <div class="result-card">
+                <h2 class="result-name">Jugador 1</h2>
+                <p class="result-score">Puntuación: 1200</p>
+            </div>
+            <div class="result-card">
+                <h2 class="result-name">Jugador 2</h2>
+                <p class="result-score">Puntuación: 980</p>
+            </div>
+            <div class="result-card">
+                <h2 class="result-name">Jugador 3</h2>
+                <p class="result-score">Puntuación: 850</p>
+            </div>
+            <div class="result-card">
+                <h2 class="result-name">Jugador 4</h2>
+                <p class="result-score">Puntuación: 700</p>
+            </div>
+        </div>
+        <button class="back-login-btn">Volver al Login</button>
+    </main>
+    
+
+    <footer>
+        <p class="ejercicio"></p>
+        <p>Koldobika Gorka Marzana San Vicente</p>
+    </footer>
+
+    <script type="module" src="../js/main.js"></script>
+</body>
+
+</html>

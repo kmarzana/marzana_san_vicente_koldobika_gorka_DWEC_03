@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2 - Interfaz de bienvenida</title>
+
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/welcome.css">
+</head>
+
+<body id="welcome-body">
+    <!-- <header> comun. Añadimos o quitamos elementos mediante JavaScript dependiendo de la página html en la que nos situemos -->
+    <header class="main-header">
+        <div class="game-logo-container">
+            <h1 class="game-title">PIXELART</h1>
+            <img class="game-logo"
+                src="../images/kisspng-space-invaders-extreme-2-clip-art-arcade-game-alie-space-invaders-svg-png-icon-free-download-3969-5b7e14a34da5a7.3685625015349894753181.png"
+                alt="Logo del juego PIXELART representando un marciano del juego clásico Space Invaders">
+        </div>
+        <div class="logout-container">
+            <div class="countdown"></div>
+            <div class="logout-icon-container">
+                <div class="logout-icon-container">
+                    <img class="logout-icon" src="../images/logout_24dp_333333_FILL0_wght400_GRAD0_opsz24.png"
+                    alt="Icono de cierre de sesión">
+                </div>
+            </div>
+            <span class="session-user"></span>
+        </div>
+    </header>
+
+    <main>
+        <section class="game-description-container">
+            <img class="game-description-image" src="../images/Pixel-Art-Scooter-4.webp"
+                alt="Ejemplo PixelArt que representa una motocicleta">
+            <p class="game-description-text">
+                El <span>Pixel Art</span> es una forma de arte digital en la que las imágenes se crean y editan al nivel
+                de los <span>píxeles individuales</span>, lo que resulta en un estilo visual distintivo que recuerda a
+                los gráficos de los primeros videojuegos y computadoras. Esta técnica surgió en las décadas de 1980 y
+                1990, cuando las limitaciones tecnológicas de la época imponían <span>resoluciones bajas y paletas de
+                    colores restringidas</span>, lo que obligaba a los diseñadores a trabajar con detalles mínimos.
+            </p>
+            <img class="game-description-image" src="../images/Pixel-Art-Pineapple-3.webp"
+                alt="Ejemplo de PixelArt que representa una piña">
+            <p class="game-description-text">
+                En este juego, <span>tu misión es reproducir con precisión dibujos prediseñados sobre una paleta de
+                    píxeles en blanco</span>. Con niveles que van desde diseños simples hasta composiciones complejas,
+                pondrás a prueba tu <span>capacidad de observación</span> y tu <span>destreza para trabajar al
+                    detalle</span>. Cada nivel presenta un desafío único que te llevará a explorar tu creatividad
+                mientras perfeccionas tus habilidades de Pixel Art. <span>¿Podrás igualar los colores y formas del modelo
+                    original antes de que se acabe el tiempo?</span> ¡Prepárate para disfrutar de un juego que combina arte,
+                diversión y desafío en cada píxel!
+            </p>
+            <p class="game-description-text">
+                Selecciona el <span>nivel</span>:
+            </p>
+
+            <div class="level-buttons-container">
+                <button id="level-easy" class="level-btn">FACIL</button>
+                <button id="level-hard" class="level-btn">DIFICIL</button>
+                <button id="level-expert" class="level-btn">EXPERTO</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- <footer> comun. Añadimos o quitamos elementos mediante JavaScript dependiendo de la página html en la que nos situemos -->
+    <footer class="main-footer">
+        <p class="ejercicio"></p>
+        <p>Koldobika Gorka Marzana San Vicente</p>
+    </footer>
+
+    <script type="module" src="../js/main.js"></script>
+</body>
+
+</html>

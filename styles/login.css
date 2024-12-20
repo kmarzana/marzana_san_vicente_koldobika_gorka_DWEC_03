@@ -1,0 +1,93 @@
+/* login.html */
+.login-section {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    border: 3px dashed rgba(51, 51, 51, .1);
+}
+
+.login-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label span {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: .5rem 2rem .5rem .5rem;
+    border: 3px dashed rgba(51, 51, 51, .1);
+    outline: none;
+}
+
+input::placeholder {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: .8rem;
+    font-style: italic;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: .5rem;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    border: none;
+    margin-top: 2rem;
+    outline: none;
+    color: white;
+    background-color: #5FC23A;
+    border-radius: 10px;
+}
+
+.input-container { /* Estilo para la utilidad de ver la contraseña en modo texto */
+    position: relative;
+}
+.pwd-visibility { /* ... sigue... */
+    height: 1.2rem;
+    width: auto;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%); 
+}
+.pwd-visibility-on { /* ... sigue... */
+    visibility: visible;
+}
+.pwd-visibility-off { /* Fin */
+    visibility: hidden;
+}
+
+.password-msg { /* Estilos para los mensajes de info login */
+    visibility: hidden;
+    color: rgb(230, 100, 100);
+}
+.username-msg { /* ... sigue... */
+    visibility: hidden;
+    color: rgb(230, 100, 100);
+}
+.submit-msg { /* Fin */
+    visibility: hidden;
+    color: rgb(25, 155, 155);
+}
+
+.login-info-msg {
+    visibility: hidden;
+    color: rgb(230, 100, 100);
+    display: block;
+    text-align: center;
+    font-size: .7rem;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    margin-top: 1rem;
+}

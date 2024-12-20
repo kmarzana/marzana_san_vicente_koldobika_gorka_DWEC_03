@@ -1,0 +1,16 @@
+/* index.html */
+#index-btn {
+    min-width: 400px;
+    height: 100px;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    word-spacing: .3rem;
+    letter-spacing: .2rem;
+    color: white;
+    background-color: #5FC23A;
+    border-radius: 20px;
+    outline: none;
+}
