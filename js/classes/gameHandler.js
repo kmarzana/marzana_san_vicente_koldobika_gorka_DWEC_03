@@ -82,7 +82,7 @@ export class PixelGrid {
                     showMessage(compareError, 'Conseguido! Las imagenes son iguales!');
 
                     setTimeout(() => {
-                        showMessage(compareError, '');
+                        navigateTo('../../html/welcome.html');
                     }, 3000);
                     
                     navigateTo('../../html/welcome.html');
